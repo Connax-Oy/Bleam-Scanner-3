@@ -1,0 +1,78 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+*.bin
+*.in
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Scripts
+*.bat
+*.sh
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.diff
+*.log
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# Mac OSX files
+.DS_Store
+
+# Build folder
+Output/
+build/
+_build/
+
+# SES files
+*.emSession
+*.jlink
+
+# Compiled packages
+*.zip
+
+# Keys
+*.pem
+
+# Backup files
+*.orig
+
+#SDK
+nRF5_SDK_*/

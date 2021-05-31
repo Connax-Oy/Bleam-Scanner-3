@@ -1,0 +1,36 @@
+<!DOCTYPE Linker_Placement_File>
+<Root name="Flash Section Placement">
+  <MemorySegment name="$(FLASH_NAME:FLASH)">
+    <ProgramSection alignment="0x100" load="Yes" name=".vectors" start="$(FLASH_START:)" address_symbol="__isr_vector"  />
+    <ProgramSection alignment="4" load="Yes" name=".init" />
+    <ProgramSection alignment="4" load="Yes" name=".init_rodata" />
+    <ProgramSection alignment="4" load="Yes" name=".text" />
+    <ProgramSection alignment="4" load="Yes" name=".dtors" />
+    <ProgramSection alignment="4" load="Yes" name=".ctors" />
+    <ProgramSection alignment="4" load="Yes" name=".rodata" />
+    <ProgramSection alignment="4" keep="Yes" load="Yes" name=".pwr_mgmt_data" inputsections="*(SORT(.pwr_mgmt_data*))" address_symbol="__start_pwr_mgmt_data" end_symbol="__stop_pwr_mgmt_data" />
+    <ProgramSection alignment="4" load="Yes" name=".ARM.exidx" address_symbol="__exidx_start" end_symbol="__exidx_end" />
+    <ProgramSection alignment="4" load="Yes" runin=".fast_run" name=".fast" />
+    <ProgramSection alignment="4" load="Yes" runin=".data_run" name=".data" />
+    <ProgramSection alignment="4" load="Yes" runin=".tdata_run" name=".tdata" />
+    <ProgramSection alignment="4" keep="Yes" load="Yes" runin=".fs_data_run" name=".fs_data" />
+    <ProgramSection alignment="4" keep="Yes" load="No" name=".bootloaderSettings" start="$(BOOTLOADER_SETTINGS_START:)" size="$(BOOTLOADER_SETTINGS_SIZE:)" />
+  </MemorySegment>
+  <MemorySegment name="$(RAM_NAME:RAM);SRAM">
+    <ProgramSection alignment="0x100" load="No" name=".vectors_ram" start="$(RAM_START:$(SRAM_START:))" />
+    <ProgramSection alignment="4" keep="Yes" load="No" name=".retained_section" address_symbol="__start_retained_section" end_symbol="__stop__retained_section" size="0x16" />
+    <ProgramSection alignment="4" load="No" name=".fast_run" />
+    <ProgramSection alignment="4" load="No" name=".data_run" />
+    <ProgramSection alignment="4" load="No" name=".tdata_run" />
+    <ProgramSection alignment="4" load="No" keep="Yes" name=".fs_data_run" address_symbol="__start_fs_data" end_symbol="__stop_fs_data" />
+    <ProgramSection alignment="4" load="No" name=".bss" />
+    <ProgramSection alignment="4" load="No" name=".tbss" />
+    <ProgramSection alignment="4" load="No" name=".non_init" />
+    <ProgramSection alignment="4" size="__HEAPSIZE__" load="No" name=".heap" />
+    <ProgramSection alignment="8" size="__STACKSIZE__" load="No" place_from_segment_end="Yes" name=".stack" />
+    <ProgramSection alignment="8" size="__STACKSIZE_PROCESS__" load="No" name=".stack_process" />
+  </MemorySegment>
+  <MemorySegment name="UICR_BOOTLOADER">
+    <ProgramSection alignment="4" keep="Yes" load="Yes" name=".uicrBootStartAddress" address_symbol="__start_uicrBootStartAddress" end_symbol="__stop_uicrBootStartAddress" start = "0x10001014" size="0x4" />
+  </MemorySegment>
+</Root>
