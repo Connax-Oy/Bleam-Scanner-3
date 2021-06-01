@@ -176,7 +176,8 @@ Bleam Scanner 3 is licenced under MIT License.
 ## Documentation
 
 Project documentation is generated with Doxygen.
-Access the documentation locally from `doc/index.html`.
+Access the documentation on [connax.github.io](https://connax-oy.github.io/Bleam-Scanner-3/html/index.html)
+or locally from `doc/index.html`.
 Doxyfile is included in the repo.
 
 [The Bleam Scanner 2 repository wiki](https://github.com/Connax-Oy/Bleam-Scanner-2/wiki) describes the logic and decisions behind Bleam Scanner 2 solutions,
