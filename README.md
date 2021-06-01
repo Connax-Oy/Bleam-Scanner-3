@@ -72,6 +72,10 @@ cd nrf51_armgcc/armgcc
 make
 ```
 
+### SES compatibility with nRF SDK 12.3.0
+SDK 12.3.0 doesn't support SES, but the submodule [Segger Embedded Studio Project for nRF51 development](https://github.com/jimmywong2003/SES-Project-For-NRF51.git)
+covers all missing links.
+
 This is the directory selective treeview when the setup is done:
 ```
 \.
@@ -94,6 +98,7 @@ This is the directory selective treeview when the setup is done:
 |   +---ruuvi.endpoints.c
 |   \---ruuvi.libraries.c
 |               
+|---SES-compatibility-with-SDK-12
 \---src
 ```
 
@@ -174,7 +179,7 @@ Project documentation is generated with Doxygen.
 Access the documentation locally from `doc/index.html`.
 Doxyfile is included in the repo.
 
-[The Bleam Scanner 2 repository wiki](https://github.com/Connax-Oy/Bleam-Scanner-3/wiki) describes the logic and decisions behind Bleam Scanner 2 solutions,
+[The Bleam Scanner 2 repository wiki](https://github.com/Connax-Oy/Bleam-Scanner-2/wiki) describes the logic and decisions behind Bleam Scanner 2 solutions,
 while [this document](https://github.com/Connax-Oy/Bleam-Scanner-3/blob/main/docs/bleam-scanner-2-3-differences.md) describes
 differences and decisions taken between Bleam Scanner 2 and 3.
 

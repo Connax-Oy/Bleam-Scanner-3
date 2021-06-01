@@ -10,3 +10,6 @@
 [submodule "Ruuvi_SDK/ruuvi.boards.c"]
 	path = Ruuvi_SDK/ruuvi.boards.c
 	url = https://github.com/ruuvi/ruuvi.boards.c.git
+[submodule "SES-compatibility-with-SDK-12/SES-Project-For-NRF51"]
+	path = SES-compatibility-with-SDK-12/SES-Project-For-NRF51
+	url = https://github.com/jimmywong2003/SES-Project-For-NRF51.git
