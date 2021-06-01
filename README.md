@@ -2,7 +2,7 @@
 
 <img align="left" src="https://user-images.githubusercontent.com/44293126/112982869-ab80c700-9165-11eb-9872-a304371a0b83.png" hspace="15" style="float: left">Bleam Scanner is an inverted Bluetooth low energy (BLE) beacon communication protocol. In the inverted communication scheme beacon serves as a scanner, taking this role from a phone that in its turn is responsible for advertising. The main benefit of such a design approach is its ability to function extensively in the background, constantly monitoring RSSI levels.
 
-Bleam Scanner 3 is an upgraded version of [Bleam Scanner 2](https://github.com/Connax-Oy/Bleam-Scanner-2).
+Bleam Scanner 3 is an upgraded version of [Bleam Scanner 2](https://github.com/Connax-Oy/Bleam-Scanner-2). The primary changes between the versions are described [here](https://github.com/Connax-Oy/Bleam-Scanner-3/blob/main/docs/bleam-scanner-2-3-differences.md).
 
 ## Design drivers:
 * Long-term background RSSI measuring, for precise location or proximity solutions; 
